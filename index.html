@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<meta charset="utf-8"/>
+	<title>Wypożyczalnia</title>
+	<meta name="description" content="tutaj potem damy opis tej strony przydaje sie do wyszukiwan w google"/>
+	<meta name="keywords" content="wypożyczalnia, Tłuszcz, Wypożyczlnia Tłuszcz" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="icon" href="IMG/Ikony/ikona.ico" type="image/x-icon" />
+	<link rel="stylesheet" href="CSS/main.css" type="text/css" />
+	<link rel="stylesheet" href="CSS/all.css" type="text/css" />
+	<link rel="stylesheet" href="CSS/typySamochodow.css" type="text/css" />
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet"> 
+
+</head>
+
+<body>
+	<div id="container">
+		<header id="pasekGora">
+			<div id="zawartoscPaskaGornego">
+				<div id="logo">
+					<a href="index.html">
+						<img id="logoZdj" src="IMG/logo.png">
+					</a>
+				</div>
+				<div id="menu">
+					<a href="kontakt.html">
+						<div class="przycisk" id="blank">
+							<h1 class="wyborZMenu">KONTAKT</h1>
+						</div>
+					</a>
+					<a href="zasady.html">	
+						<div class="przycisk">
+							<h1 class="wyborZMenu">ZASADY WYNAJMU</h1>
+						</div>
+					</a>
+					<a href="pytania.html">
+						<div class="przycisk">
+							<h1 class="wyborZMenu">PYTANIA I ODPOWIEDZI</h1>
+						</div>
+					</a>
+					<a href="flota.html" class="linkDoPodstrony">
+						<div class="przycisk">
+							<h1 class="wyborZMenu">FLOTA</h1>
+						</div>
+					</a>
+				</div>
+				<div id="przyciskMenu" onclick="menu(this); pokaz(pasekZTlem); pokaz(zawartoscStronyGlownej); pokaz(pasekDolMaly); pokaz(spod); pokaz(malaMapa); pokaz(menuMobilne);">
+					<div style="width: 35px; height: 39px; margin: 7px 10px; margin-top: 13px;">
+						<div class="bar1"></div>
+						<div class="bar2"></div>
+						<div class="bar3"></div>
+					</div>
+				</div>
+			</div>
+		</header>
+		
+		
+		<div id="pasekZTlem" style="background-image: url(IMG/Tlo/glowna.png); clear:both;">
+			<div id="tlo">
+				<div id="informacjeNaGorze">
+					<h1 id="nazwa">F.H. Green Car</h1>
+					<h1 id="imieINazwisko">Sławomir Dziubałtowski</h1>
+					<div class="srodek"><a href="tel:+48513018793" class="przyciskZadzwon">Zadzwoń</a></div>
+					<div class="srodek" id="odstep1">
+						<a id="numerTelefonu" href="tel:+48513018793">+48 513 018 793</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="zawartoscStronyGlownej">
+			<div class="pasOdstepuKolor"></div>
+			<div id="informacjeOFirmie">
+				<div id="oNas">
+					<h1 class="oNas">O firmie</h1>
+				</div>
+				<div id="oNas2">
+					<h2 id="oNas2">Firma GREEN CAR działa na terenie Tłuszcza od 2009 roku. Nasze samochody podróżują po całej Polsce i nie tylko. W naszej ofercie posiadamy różnego rodzaju auta dostawcze, autolawety, przyczepy oraz samochody osobowe i dziewięcioosobowe.
+					<br><br> Oferujemy wynajem długoterminowy
+					</h2>
+				</div>
+			</div>
+			<div class="pasOdstepuKolor"></div>
+			<h1 class="oNas">Flota</h1>
+				<div id="typy">
+					<div class="auto1">
+						<div class="auto">
+							<img src="IMG/samochody/dostawczy.png" class="samochod">
+							<div class="sprawdzSzczegoly">
+								<a href="flota.html#dostawcze" class="linkDoPodstrony">
+									<div class="tekst">Sprawdz<br>Szczegoly</div>
+								</a>
+							</div>
+						</div>
+						<div class="typAuta">
+							<h1 class="typAuta">Dostawcze</h1>
+						</div>
+					</div>
+					<div class="auto1">
+						<div class="auto">
+							<img src="IMG/samochody/autolaweta.jpg" class="samochod">
+							<div class="sprawdzSzczegoly">
+								<a href="flota.html#autolawety" class="linkDoPodstrony">
+									<div class="tekst">Sprawdz<br>Szczegoly</div>
+								</a>
+							</div>
+						</div>
+						<div class="typAuta">
+							<h1 class="typAuta">Autolawety</h1>
+						</div>
+					</div>
+					<div class="auto1">
+						<div class="auto">
+							<img src="IMG/samochody/osobowe.jpg" class="samochod">
+							<div class="sprawdzSzczegoly">
+								<a href="flota.html#osobowe" class="linkDoPodstrony">
+									<div class="tekst">Sprawdz<br>Szczegoly</div>
+								</a>
+							</div>
+						</div>
+						<div class="typAuta">
+							<h1 class="typAuta2">Osobowe<br>Dziewięcioosobowe</h1>
+						</div>
+					</div>
+					<div class="auto1">
+						<div class="auto">
+							<img src="IMG/samochody/dziwiecioosobowe.jpeg" class="samochod">
+							<div class="sprawdzSzczegoly">
+								<a href="flota.html#przyczepy" class="linkDoPodstrony">
+									<div class="tekst">Sprawdz<br>Szczegoly</div>
+								</a>
+							</div>
+						</div>
+						<div class="typAuta">
+							<h1 class="typAuta">Przyczepy</h1>
+						</div>
+					</div>
+				</div>
+			<div class="pasOdstepuKolor"></div>
+			<div id="zaproszenieNaFbDuze">
+				<div id="stronaNaFbDuze">
+					<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FWypo%25C5%25BCyczalnia-Samochod%25C3%25B3w-1960576057503882%2F&tabs=timeline&width=400&height=300&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="400" height="300" style="border:none;overflow:hidden; margin-left:100px" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+				</div>
+				<div id="informacjeOFbDuze">
+					<h2 id="informacjeOFbDuze">Zapraszamy na naszą stronę na Facebooku, gdzie znajdują się informacje o nowych samochodach w naszej flocie oraz inne aktualne informacje.</h2>
+				</div>
+			</div>
+			<div id="zaproszenieNaFbMale">
+				<div id="informacjeOFbMale">
+					<h2 id="informacjeOFbMale">Zapraszamy na naszą stronę na Facebooku, gdzie znajdują się informacje o nowych samochodach w naszej flocie oraz inne aktualne informacje.</h2>
+				</div>
+				<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FWypo%25C5%25BCyczalnia-Samochod%25C3%25B3w-1960576057503882%2F&tabs&width=300&height=150&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="300" height="150" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+			</div>
+			<div class="pasOdstepuKolor"></div>
+		</div>
+		
+		
+		
+		<div id="pasekDolDuzy" style="float:left">
+			<div id="zawartoscPaskaDolnego">
+				<div style="width:600px; height: 450px; float: left;">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2432.3906166581746!2d21.449797456299052!3d52.43583846243061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ede68546805b5%3A0xd17145357e9e0121!2sF.h.%20Green%20Car!5e0!3m2!1spl!2spl!4v1612702388157!5m2!1spl!2spl" width="100%" height="100%" frameborder="0" style="border:0; float:left;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+				</div>
+				<div id="podstawoweInformacje">
+					<div id="napisKontakt">
+						<h1 style="margin:0; font-size: 36px;">Kontakt</h1>
+					</div>
+
+					<!-- TELEFON -->
+					<div class="informacjeKontaktowe">
+						<i class="fa fa-phone fa-2x" style="color:antiquewhite; height:30px; width:30px; float:left;"></i>
+						<div class="odstepOdIkony"></div>
+						<a href="tel:+48513018793" class="informacjeWKontakcie">tel: +48 513 018 793</a>
+					</div>
+
+					<!-- FACEBOOK -->
+					<div class="informacjeKontaktowe">
+						<a href="https://www.facebook.com/Wypo%C5%BCyczalnia-Samochod%C3%B3w-1960576057503882/" class="fa fa-facebook" id="ikonaFB" target="_blank" style="color:white; background:#3B5998; font-size: 18px; width:18px; height: 18px; text-align:center; float:left ; text-decoration: none; border-radius: 50%; padding: 5px"></a>
+						<div class="odstepOdIkony"></div>
+						<a href="https://www.facebook.com/Wypo%C5%BCyczalnia-Samochod%C3%B3w-1960576057503882/" class="informacjeWKontakcie" target="_blank">Facebook</a>
+					</div>
+
+					<!-- ADRES -->
+					<div class="informacjeKontaktowe">
+						<i class="fa fa-map-marker" style="font-size:30px; color: red; width: 25px; margin-left:5px; float: left;"></i>
+						<div class="odstepOdIkony"></div>
+						<a href="https://goo.gl/maps/b5H6ac2aUPD1MfEs6" target="_blank" class="informacjeWKontakcie">Przemysłowa 27B, 05-240 Tłuszcz</a>
+					</div>
+
+					<!-- GODZINY OTWARCIA -->
+					<div class="informacjeKontaktowe">
+						<i class="fa fa-clock-o fa-2x" aria-hidden="true" style="color: white; width: 30px; height: 30px; float: left;"></i>
+						<div class="odstepOdIkony"></div>
+						<h2 class="informacjeWKontakcie">PN-PT 7-17, SOB 7-14</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="pasekDolMaly">
+			<h2 style="font-size: 24px; text-align: center; color: white; margin: 30px auto;">Kontakt</h2>
+			<div id="daneFirmy">
+				<div class="informacjeKontaktowe">
+					<i class="fa fa-phone fa-1x" style="color:antiquewhite; height:20px; width:20px; float:left; margin-left: 5px; margin-right: 5px;"></i>
+						<div class="odstepOdIkony"></div>
+					<a href="tel:+48513018793" class="informacjeWKontakcie">tel: +48 513 018 793</a>
+				</div>
+				<div class="informacjeKontaktowe">
+					<a href="https://www.facebook.com/Wypo%C5%BCyczalnia-Samochod%C3%B3w-1960576057503882/" class="fa fa-facebook" id="ikonaFB" target="_blank" style="color:white; background:#3B5998; font-size: 13px; width:13px; height: 13px; text-align:center; float:left ; text-decoration: none; border-radius: 50%; padding: 5px; margin-right: 7px"></a>
+						<div class="odstepOdIkony"></div>
+					<a href="https://www.facebook.com/Wypo%C5%BCyczalnia-Samochod%C3%B3w-1960576057503882/" class="informacjeWKontakcie" target="_blank">Facebook</a>
+				</div>
+				<div class="informacjeKontaktowe">
+					<i class="fa fa-map-marker" style="font-size:20px; color: red; width: 25px; margin-left:5px; float: left;"></i>
+						<div class="odstepOdIkony"></div>
+					<a href="https://goo.gl/maps/b5H6ac2aUPD1MfEs6" target="_blank" class="informacjeWKontakcie">Przemysłowa 27B  05-240 Tłuszcz</a>
+				</div>
+				<div class="informacjeKontaktowe">
+					<i class="fa fa-clock-o fa-1x" aria-hidden="true" style="color: white; width: 25px; height: 30px; float: left; margin-right:1px;; margin-left: 4px;"></i>
+						<div class="odstepOdIkony"></div>
+					<h2 class="informacjeWKontakcie">PN-PT 7-17, SOB 7-14</h2>
+				</div>
+			</div>
+		</div>
+
+		<div id="malaMapa">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2432.3906166581746!2d21.449797456299052!3d52.43583846243061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ede68546805b5%3A0xd17145357e9e0121!2sF.h.%20Green%20Car!5e0!3m2!1spl!2spl!4v1612702388157!5m2!1spl!2spl" width="100%" height="300px" frameborder="0" style="border:0; float:left;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>	
+		</div>
+		
+		<div id="spod">
+			<div id="zawartoscSpod">
+				<div id="kreskaDol"></div>
+				<h2 id="nazwaDol">F.H. GREEN CAR Sławomir Dziubałtoski</h2>
+
+			</div>		
+		</div>
+	</div>
+
+	<div id=menuMobilne style="display: none;">
+		<a href="kontakt.html" class="wyborZMenu">
+			<div class="przyciskZMenu">	
+				<h1 class="wyborZMenu">Flota</h1>
+			</div>
+		</a>
+
+		<div id="pasekMenu"></div>
+
+		<a href="kontakt.html" class="wyborZMenu">
+			<div class="przyciskZMenu">	
+				<h1 class="wyborZMenu">Pytania i odpowiedzi</h1>
+			</div>
+		</a>
+
+		<div id="pasekMenu"></div>
+
+		<a href="kontakt.html" class="wyborZMenu">
+			<div class="przyciskZMenu">	
+				<h1 class="wyborZMenu">Zasady wynajmu</h1>
+			</div>
+		</a>
+
+		<div id="pasekMenu"></div>
+
+		<a href="kontakt.html" class="wyborZMenu">
+			<div class="przyciskZMenu">	
+				<h1 class="wyborZMenu">Kontakt</h1>
+			</div>
+		</a>
+	</div>
+
+	<script src="JS/menu.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<meta charset="utf-8"/>
+	<title>Wypożyczalnia</title>
+	<meta name="description" content="tutaj potem damy opis tej strony przydaje sie do wyszukiwan w google"/>
+	<meta name="keywords" content="wypożyczalnia, Tłuszcz, Wypożyczlnia Tłuszcz" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="icon" href="IMG/Ikony/ikona.ico" type="image/x-icon" />
+	
+	<link rel="stylesheet" href="CSS/all.css" type="text/css" />
+	<link rel="stylesheet" href="CSS/samochod.css" type="text/css" />
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet"> 
+
+</head>
+
+<body>
+	<div id="container">
+		<header id="pasekGora">
+			<div id="zawartoscPaskaGornego">
+				<div id="logo">
+					<a href="index.html">
+						<img id=logoZdj src="IMG/logo.png">
+					</a>
+				</div>
+				<div id="menu">
+					<a href="kontakt.html">
+						<div class="przycisk" id="blank">
+							<h1 class="wyborZMenu">KONTAKT</h1>
+						</div>
+					</a>
+					<a href="zasady.html">	
+						<div class="przycisk">
+							<h1 class="wyborZMenu">ZASADY WYNAJMU</h1>
+						</div>
+					</a>
+					<a href="pytania.html">
+						<div class="przycisk">
+							<h1 class="wyborZMenu">PYTANIA I ODPOWIEDZI</h1>
+						</div>
+					</a>
+					<a href="flota.html" class="linkDoPodstrony">
+						<div class="przycisk">
+							<h1 class="wyborZMenu">FLOTA</h1>
+						</div>
+					</a>
+				</div>
+			</div>
+		</header>
+
+		<div id="nazwa">
+			<h1 id="nazwa">Peugeot 308</h1>
+		</div>
+		<div id="stronaPojazdu">
+			<div id="zdjeciaSamochodu">
+				<div id="obrazGlowny">
+					<div class="duzeZdjecie" style="display: block;">
+						<img src="IMG/samochody/przyklad/peugeot1.png" class="duzeZdjecie2">
+						<img src="IMG/samochody/przyklad/peugeot2.png" class="duzeZdjecie2">
+						<img src="IMG/samochody/przyklad/peugeot3.png" class="duzeZdjecie2">
+						<img src="IMG/samochody/przyklad/peugeot4.png" class="duzeZdjecie2">
+						<img src="IMG/samochody/przyklad/peugeot5.png" class="duzeZdjecie2">
+					</div>
+					<!-- <div class="duzeZdjecie" style="display: none;">
+					</div>
+					<div class="duzeZdjecie" style="display: none;">
+					</div>
+					<div class="duzeZdjecie" style="display: none;">
+					</div>
+					<div class="duzeZdjecie" style="display: none;">
+					</div> -->
+
+					<a id="poprzedni" onclick="zmien(-1)">&#10094;</a>
+  					<a id="nastepny" onclick="zmien(1)">&#10095;</a>
+				</div>
+				<div id="pasekWyboru">
+					<div class="maleZdjecie2">
+						<img class="maleZdjecie" src="IMG/samochody/przyklad/peugeot1.png" onclick="wyswietlKonkretny(1)">
+					</div>
+					<div class="maleZdjecie2">
+						<img class="maleZdjecie" src="IMG/samochody/przyklad/peugeot2.png" onclick="wyswietlKonkretny(2)">
+					</div>
+					<div class="maleZdjecie2">
+						<img class="maleZdjecie" src="IMG/samochody/przyklad/peugeot3.png" onclick="wyswietlKonkretny(3)">
+					</div>
+					<div class="maleZdjecie2">
+						<img class="maleZdjecie" src="IMG/samochody/przyklad/peugeot4.png" onclick="wyswietlKonkretny(4)" mouseenter="najechanie(4)" mouseleave="nieJestem()">
+					</div>
+					<div class="maleZdjecie2">
+						<img class="maleZdjecie" src="IMG/samochody/przyklad/peugeot5.png" onclick="wyswietlKonkretny(5)">
+					</div>
+				</div>
+			</div>
+			<div id="podstawoweInfo">
+				<div class="odstep"></div>
+				<div class="informacja"> 
+					<div class="typ">
+						<h1 class="informacja">Rodzaj paliwa:</h1>
+					</div>
+					<div class="szczegol">
+						<h1 class="informacja">Benzyna</h1>
+					</div>
+				</div>
+				<div class="malyPasekOdstepu"></div>
+				<div class="informacja"> 
+					<div class="typ">
+						<h1 class="informacja">Pojemność silnika:</h1>
+					</div>
+					<div class="szczegol">
+						<h1 class="informacja">1397cm<sup>3</sup></h1>
+					</div>
+				</div>
+				<div class="malyPasekOdstepu"></div>
+				<div class="informacja"> 
+					<div class="typ">
+						<h1 class="informacja">Moc silnika:</h1>
+					</div>
+					<div class="szczegol">
+						<h1 class="informacja">95KM</h1>
+					</div>
+				</div>
+				<div class="malyPasekOdstepu"></div>
+				<div class="informacja"> 
+					<div class="typ">
+						<h1 class="informacja">Typ skrzyni biegów:</h1>
+					</div>
+					<div class="szczegol">
+						<h1 class="informacja">Manualna</h1>
+					</div>
+				</div>
+				<div class="malyPasekOdstepu"></div>
+				<div class="informacja"> 
+					<div class="typ">
+						<h1 class="informacja">Napęd:</h1>
+					</div>
+					<div class="szczegol">
+						<h1 class="informacja">Przód</h1>
+					</div>
+				</div>
+				<div class="malyPasekOdstepu"></div>
+				<div class="informacja"> 
+					<div class="typ">
+						<h1 class="informacja">Liczba drzwi:</h1>
+					</div>
+					<div class="szczegol">
+						<h1 class="informacja">3</h1>
+					</div>
+				</div>
+				<div class="malyPasekOdstepu"></div>
+				<div class="informacja"> 
+					<div class="typ">
+						<h1 class="informacja">Liczba miejsc:</h1>
+					</div>
+					<div class="szczegol">
+						<h1 class="informacja">5</h1>
+					</div>
+				</div>
+				<div class="odstep"></div>
+				<div id="przycisk">
+					<a href="tel:+48513018793" class="przycisk">Wypożycz Samochód</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="pasOdstepuKolor"></div>
+
+		<div id="wypozyczenie">
+			<h2 id="naglowekWyp">Chcesz wypożyczyć samochód?</h2>
+		</div>
+
+		<div style="height: 200px;"></div>
+
+		<div id="mapa">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2432.3906166581746!2d21.449797456299052!3d52.43583846243061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ede68546805b5%3A0xd17145357e9e0121!2sF.h.%20Green%20Car!5e0!3m2!1spl!2spl!4v1612702388157!5m2!1spl!2spl" width="100%" height="100%" frameborder="0" style="border:0; float:left;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+		</div>
+
+		
+	</div>
+	<div id="spod">
+		<div id="zawartoscSpod">
+			<div id="kreskaDol"></div>
+			<h2 id="nazwaDol">F.H. GREEN CAR Sławomir Dziubałtoski</h2>
+		</div>			
+	</div>
+
+	<script src="JS/galeria.js"></script>
+	
+</body>
+
+</html>
